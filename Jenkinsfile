@@ -10,10 +10,10 @@ pipeline {
         stage('create-docker-image') {
             steps {
                 sh '''
-                docker build -t devopstechlab/javawebapp:${BUILD_NUMBER} .
-                docker tag devopstechlab/javawebapp:${BUILD_NUMBER} devopstechlab/javawebapp:latest
-                docker push devopstechlab/javawebapp:${BUILD_NUMBER}
-                docker push devopstechlab/javawebapp:latest
+                docker build -t kachhadiyatushar/javawebapp:${BUILD_NUMBER} .
+                docker tag kachhadiyatushar/javawebapp:${BUILD_NUMBER} kachhadiyatushar/javawebapp:latest
+                docker push kachhadiyatushar/javawebapp:${BUILD_NUMBER}
+                docker push kachhadiyatushar/javawebapp:latest
                 '''
             }
         }
