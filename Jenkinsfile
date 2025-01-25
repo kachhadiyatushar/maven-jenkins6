@@ -4,7 +4,7 @@ pipeline {
         stage('git-code-download') {
             steps {
                 echo "Download code from Git"
-                git branch: 'main', url: 'https://github.com/devopstechlab/maven-jenkins6.git'
+                git branch: 'main', url: 'https://github.com/kachhadiyatushar/maven-jenkins6.git'
             }
         }
         stage('create-docker-image') {
