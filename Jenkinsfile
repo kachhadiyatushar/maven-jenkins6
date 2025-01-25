@@ -17,5 +17,10 @@ pipeline {
                 '''
             }
         }
+        stage('deploy') {
+            steps {
+                build 'docker-deploy'
+            }
+        }
     }
 }
